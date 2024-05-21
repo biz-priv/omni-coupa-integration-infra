@@ -24,5 +24,6 @@ resource "aws_dynamodb_table" "omni-coupa-logs-table" {
     Application = var.application
     CreatedBy   = var.created_by
     Environment = var.env
+    Name        = "omni-coupa-logs-${var.env}"
   }
 }
