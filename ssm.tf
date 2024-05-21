@@ -22,7 +22,7 @@ resource "aws_ssm_parameter" "omni-coupa-notification-sns-arn" {
   }
 }
 
-resource "aws_ssm_parameter" "omni -coupa-websli-token" {
+resource "aws_ssm_parameter" "omni-coupa-websli-token" {
   name  = "/${var.application}/${var.env}/websli-token"
   type  = "String"
   value = var.omni_coupa_websli_token
@@ -34,7 +34,7 @@ resource "aws_ssm_parameter" "omni -coupa-websli-token" {
   }
 }
 
-resource "aws_ssm_parameter" "omni -coupa-api-url" {
+resource "aws_ssm_parameter" "omni-coupa-api-url" {
   name  = "/${var.application}/${var.env}/api-url"
   type  = "String"
   value = var.omni_coupa_api_url
